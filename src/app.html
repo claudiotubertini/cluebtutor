@@ -4,14 +4,18 @@
   <require from="./contact-list"></require>
 
 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  
+
+
+  <nav class="navbar navbar-inverse navbar-static-top navbar-dark bg-dark box-shadow" role="navigation">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="https://clueb.it">CLUEB Edizioni</a>
         <i class="fa fa-user"></i>
-        <span>Contacts</span>
+        <a class="fa fa-user" href="#">Materiali integrativi</a>
       </a>
     </div>
   </nav>
+  <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
 
   <div class="container">
     <div class="row">
