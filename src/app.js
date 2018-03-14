@@ -3,8 +3,7 @@ export class App {
     config.title = 'Clueb Tutor';
     config.map([
       { route: '', moduleId: 'no-selection', title: 'Select'},
-      { route: 'books/:id', 
-      moduleId: 'book-detail', name: 'books' }
+      { route: 'contacts/:id', moduleId: 'contact-detail', name: 'contacts' }
     ]);
 
     this.router = router;
